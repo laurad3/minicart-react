@@ -1,26 +1,75 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Minicart from './components/Minicart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const upTo = (el, className) => {
+    let parent = el.parentNode;
+
+    while (parent.classList.contains(className) === false) {
+        parent = parent.parentNode;
+    }
+
+    return parent;
+};
+
+const App = ({ items }) => {
+    const [minicartItems, setMinicartItems] = useState(items);
+
+    const handleTrash = (e) => {
+        // trigger animation
+        const parent = upTo(e.target, 'minicart-item');
+        const id = Number(parent.dataset.id);
+        let updatedItems = [...minicartItems];
+
+        updatedItems.forEach(item => {
+            if (item.id === id) {
+                item.trash = true;
+            }
+        });
+
+        setMinicartItems(updatedItems);
+
+        // remove item
+        setTimeout(() => {
+            const newItems = minicartItems.filter(item => item.id !== id);
+            setMinicartItems(newItems);
+        }, 200);
+    };
+
+    const handleIncrement = (e) => {
+        const parent = upTo(e.target, 'minicart-item');
+        const id = Number(parent.dataset.id);
+        let updatedItems = [...minicartItems];
+
+        updatedItems.forEach(item => {
+            if (item.id === id) {
+                item.qty++;
+            }
+        });
+
+        setMinicartItems(updatedItems);
+    };
+
+    const handleDecrement = (e) => {
+        const parent = upTo(e.target, 'minicart-item');
+        const id = Number(parent.dataset.id);
+        let updatedItems = [...minicartItems];
+
+        updatedItems.forEach(item => {
+            if (item.id === id && item.qty !== 1) {
+                item.qty--;
+            }
+        });
+
+        setMinicartItems(updatedItems);
+    };
+
+    return (
+        <div>
+            <div>
+                <Minicart items={minicartItems} handleTrash={handleTrash} handleIncrement={handleIncrement} handleDecrement={handleDecrement} />
+            </div>
+        </div>
+    );
+};
 
 export default App;

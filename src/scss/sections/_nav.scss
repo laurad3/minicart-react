@@ -1,0 +1,18 @@
+.nav {
+	padding: 20px 0;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+	}
+}
+
+.basket-icon {
+	width: 20px;
+
+	path,
+	line {
+		stroke-width: 8px;
+	}
+}
