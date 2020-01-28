@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/minicart-react/static/css/main.65fa36d8.chunk.css",
+    "main.css": "/minicart-react/static/css/main.aeb616cc.chunk.css",
     "main.js": "/minicart-react/static/js/main.e80f5c32.chunk.js",
     "main.js.map": "/minicart-react/static/js/main.e80f5c32.chunk.js.map",
     "runtime-main.js": "/minicart-react/static/js/runtime-main.952227a4.js",
@@ -9,10 +9,10 @@
     "static/js/2.63cad1e6.chunk.js": "/minicart-react/static/js/2.63cad1e6.chunk.js",
     "static/js/2.63cad1e6.chunk.js.map": "/minicart-react/static/js/2.63cad1e6.chunk.js.map",
     "index.html": "/minicart-react/index.html",
-    "precache-manifest.a93236b3c817801dde02a6bc3d8e1013.js": "/minicart-react/precache-manifest.a93236b3c817801dde02a6bc3d8e1013.js",
+    "precache-manifest.0abc7217f62d9ac2a0f6b88ef44e59c6.js": "/minicart-react/precache-manifest.0abc7217f62d9ac2a0f6b88ef44e59c6.js",
     "service-worker.js": "/minicart-react/service-worker.js",
     "static/css/2.164b9f60.chunk.css.map": "/minicart-react/static/css/2.164b9f60.chunk.css.map",
-    "static/css/main.65fa36d8.chunk.css.map": "/minicart-react/static/css/main.65fa36d8.chunk.css.map",
+    "static/css/main.aeb616cc.chunk.css.map": "/minicart-react/static/css/main.aeb616cc.chunk.css.map",
     "static/js/2.63cad1e6.chunk.js.LICENSE": "/minicart-react/static/js/2.63cad1e6.chunk.js.LICENSE",
     "static/media/bag.png": "/minicart-react/static/media/bag.1204009e.png",
     "static/media/coat.png": "/minicart-react/static/media/coat.4497cb1b.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.952227a4.js",
     "static/css/2.164b9f60.chunk.css",
     "static/js/2.63cad1e6.chunk.js",
-    "static/css/main.65fa36d8.chunk.css",
+    "static/css/main.aeb616cc.chunk.css",
     "static/js/main.e80f5c32.chunk.js"
   ]
 }

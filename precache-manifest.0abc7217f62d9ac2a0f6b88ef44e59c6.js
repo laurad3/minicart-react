@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c36b9f7067bd433aae208d59b427c9eb",
+    "revision": "fe1c05fa367f36c2ca991b24b4be978a",
     "url": "/minicart-react/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minicart-react/static/css/2.164b9f60.chunk.css"
   },
   {
-    "revision": "fa357a5432e92bac5ca5",
-    "url": "/minicart-react/static/css/main.65fa36d8.chunk.css"
+    "revision": "885735b60ca8ed60a318",
+    "url": "/minicart-react/static/css/main.aeb616cc.chunk.css"
   },
   {
     "revision": "35b2db19692668c273dc",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minicart-react/static/js/2.63cad1e6.chunk.js.LICENSE"
   },
   {
-    "revision": "fa357a5432e92bac5ca5",
+    "revision": "885735b60ca8ed60a318",
     "url": "/minicart-react/static/js/main.e80f5c32.chunk.js"
   },
   {
