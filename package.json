@@ -1,25 +1,29 @@
 {
   "name": "minicart-react",
+  "homepage": "https://laurad3.github.io/minicart-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@fortawesome/fontawesome-free": "^5.12.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
     "babelify": "^10.0.0",
     "breakpoint-sass": "^2.7.1",
     "browserify": "^16.5.0",
+    "gh-pages": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "i18next": "^19.0.3",
+    "install": "^0.13.0",
+    "npm": "^6.13.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -27,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
