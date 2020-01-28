@@ -5,11 +5,12 @@
 }
 
 .minicart {
-	position: absolute;
-	top: 50px;
-	right: 20px;
+	// position: absolute;
+	// top: 50px;
+	// right: 20px;
 	border: 1px solid map-get($color-ui, 'wild-sand');
-	width: 430px;
+	max-width: 430px;
+	width: 100%;
 	// box-shadow: 4px 4px 8px #e0e0e0;
 }
 
