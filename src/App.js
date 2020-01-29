@@ -32,7 +32,7 @@ const App = ({ items }) => {
         setTimeout(() => {
             const newItems = minicartItems.filter(item => item.id !== id);
             setMinicartItems(newItems);
-        }, 200);
+        }, 400);
     };
 
     const handleIncrement = (e) => {

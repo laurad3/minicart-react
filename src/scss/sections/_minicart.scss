@@ -17,23 +17,33 @@
 
 .minicart-items {
 	list-style: none;
-	// height: calc(300px - 2px);
 	max-height: 300px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
 .minicart-item {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	// border-bottom: 2px solid map-get($color-ui, 'white');
 	height: 150px;
+
+	&:not(:first-of-type) {
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: map-get($color-ui, 'white');
+			content: '';
+			height: 2px;
+		}
+	}
 
 	&.remove {
 		transform: translate(100%);
 		height: 0;
-		// border-bottom: 0;
-		transition: all .2s ease-out;
+		transition: transform .2s ease-out, height .2s .2s ease-out;
 	}
 
 	&:last-of-type {
